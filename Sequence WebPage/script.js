@@ -59,6 +59,19 @@ function CreateTriangularNumbers(iterations) {
     return result_List
 }
 
+function CreateLazyNumbers(iterations) {
+    if (iterations > 2000) {
+        return "Segmentaion fault";
+    }
+    
+    let result_List = [];
+
+    for (let i = 0; i < iterations; i++) {
+        result_List.push((i ** 2 + i + 2) / 2);
+    }
+    return result_List;
+}
+
 function CheckSequence() {
     let sequence = document.getElementById("SequenceSelect").value;
     let iterations = document.getElementById("AmtOfIterations").value;
@@ -76,6 +89,10 @@ function CheckSequence() {
         document.getElementById("answer").innerHTML = "The button detects this function";
         let formatted_result = Format_Result(Triresult, iterations)
         document.getElementById("answer").innerHTML = formatted_result;
+    } else if (sequence == "CatererNum") {
+        let LazyResult = CreateLazyNumbers(iterations);
+        let formatted_result = Format_Result(LazyResult, iterations);
+        document.getElementById("answer").innerHTML = formatted_result
     }
 }
 
