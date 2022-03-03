@@ -1,0 +1,68 @@
+body {
+  background-color: #f2d0a4;
+}
+
+/* This space class creates an invisible block 50 pixels thick, making it useful rather than using 40-50 br tags. */
+.space {
+  margin-top: 100px;
+}
+
+.menu {
+  position: relative;
+  min-height: 100px;
+  display: block;
+  width: 100%;
+
+  background-color: lightyellow;
+  margin: 10px;
+  margin-left: 0px;
+}
+
+#documentation {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+}
+
+.main-text {
+  background-color: rgba(249, 255, 167, 0.5);
+  font-size: medium;
+  font-family: "Georgia", serif;
+  padding: 5px;
+  padding-left: 20px;
+}
+
+.Image {
+  background-color: #f2d0a4;
+  padding: 10px;
+}
+
+.information {
+  padding: 5px;
+  padding-left: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#heading {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#date {
+  text-align: center;
+  border: 2px hidden black;
+}
+
+#AmtOfIterations {
+  position: relative;
+  left: 200px;
+}
+
+#answer {
+  word-wrap: break-word;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.664);
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 5px;
+}

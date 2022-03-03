@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" type="text/JavaScript"></script>
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+<body>
+    
+    <div>
+        <h1 id="heading">Sequence Generator</h1>
+    </div>
+
+    <!--
+    <div style="margin-top: 40px"></div>
+    <div>
+        <button type="button" id="date-button" onclick="CheckDate()">Click to see date</button>
+        <br/>
+        <span id="date">Date: </span>
+    </div> -->
+
+    <div class="menu">
+        <p id="documentation">Author: David Rodriguez Sanchez</p>
+    </div>
+
+    <br/>
+
+    <div class="main-text">
+        <div class = "information">
+            <h3>Welcome to the sequence generator!</h3>
+        </div>
+        <br/>
+        <div class = "information">
+            <p>This is my first project using HTML, CSS, and JS so I hope you enjoy it!</p>
+            <p>
+                How this website works:
+                <span>
+                    <ol>
+                        <li>
+                            Select which type of sequence you want to generate. <br/>
+                            <img class="Image" src="Assets/Sequence.png" height = 100px alt="Select-image">
+                        </li>
+                        <li>
+                            Select how many iterations you want your sequance to generate.<br/>
+                            <img class="Image" src="Assets/Iterations.png" height=50px alt="Select-image-2">
+                        </li>
+                        <li>
+                            Press submit and see how it generates your list!<br/>
+                            <img class="Image" src="Assets/Result.png" height=100px alt="Submit-image">
+                        </li>
+                    </ol>
+                </span>
+            </p>
+            <div class="space"></div>
+            <span>
+                <form>
+                    <select name="Sequence-select" id="SequenceSelect">
+                        <option value="default">Please select sequence</option>
+                        <option value="Fibbonacci">Fibonacci</option>
+                        <option value="Triangular-number" id="Triangular-Number">Triangular Number Series</option>
+                    </select>
+                    <label style="position: relative; left: 200px;" >Number of Iterations :</label>
+                    <input type="text" id="AmtOfIterations">
+                </form>
+            </span>
+            <span>
+                <button id="submit" type="button" onclick="CheckSequence()">Submit</button>
+            </span>
+        </div>
+        
+        <div id="answer">
+            Please, select a sequence
+        </div>
+    </div>
+</body>
+</html>
