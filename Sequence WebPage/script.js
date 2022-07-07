@@ -95,30 +95,3 @@ function CheckSequence() {
         document.getElementById("answer").innerHTML = formatted_result
     }
 }
-
-
-
-
-
-
-
-// function CreateFibbonacci(itr) {
-//     if (itr < 1) {
-//         return "n/a";
-//     } else if (itr < 2) {
-//         return [1];
-//     } else if (itr < 3) {
-//         return [1, 1];
-//     } 
-
-//     var result = CreateFibbonacci(itr - 1);
-//     result.push(result[itr - 2] + result[itr - 3]);
-//     return result
-// }
-// let iterations = 10
-// result = CreateFibbonacci(iterations)
-// let formatted_result = "";
-// for (let i = 0; i < iterations; i++) {
-//     formatted_result += result[i] + " -> ";
-// }
-// console.log(formatted_result);
